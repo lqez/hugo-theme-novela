@@ -2,8 +2,9 @@
     <div class="social-icon-container">
         {{ range $component := .Params.social }}
             {{ $path := print "icons/social/" .title }}
-            <a href="{{ .url }}">{{ partial $path $ }}</a>
-            <span class="hidden">{{ .url }}</span>
+            <a href="{{ .url }}">{{ partial $path $ }}
+              <span class="hidden">{{ .url }}</span>
+            </a>
         {{ end }}
     </div>
 </div>
