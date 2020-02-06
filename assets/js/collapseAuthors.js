@@ -1,7 +1,14 @@
 let collapsed = true;
 
-document.getElementById("collapsedCoauthors").addEventListener("click", displayCoauthors);
-document.getElementById("uncollapsedAction").addEventListener("click", hideCoauthors);
+var collElem = document.getElementById("collapsedCoauthors");
+if (collElem) {
+  collElem.addEventListener("click", displayCoauthors);
+}
+
+var uncollElem = document.getElementById("uncollapsedAction");
+if (uncollElem) {
+  uncollElem.addEventListener("click", hideCoauthors);
+}
 
 function displayCoauthors(){
     document.getElementById("uncollapsedCoauthors").classList.remove("hidden");

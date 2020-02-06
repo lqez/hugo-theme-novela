@@ -48,22 +48,9 @@
     position: relative;
     z-index: 10;
     margin: 120px auto 20px;
+    width: 100%;
     max-width: (--content-width);
     padding-left: 0;
-
-    @media screen and (max-width: $desktop){
-        max-width: calc(507px + 53px);
-        margin: 100px auto 70px;
-    }
-
-    @media screen and (max-width: $tablet){
-        margin: 100px auto 70px;
-        max-width: 480px;
-    }
-
-    @media screen and (max-width: $phablet){
-        margin: 170px auto 180px;
-    }
 
     @media screen and (max-height: 700px) {
       margin: 100px auto;
@@ -101,16 +88,11 @@
 
     /*PHABLET*/
     @media screen and (max-width: $phablet){
-        border: 1px solid var(--horizontalRule);
         border-radius: 5px;
     }
 
     @media screen and(max-width: $phablet){
         font-size: 14px;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
 
         &.has-coauthors::before{
             content: '';
@@ -444,7 +426,7 @@
 /**************************************ARTICLE BODY**************************************/
 
 .post-content{
-    padding: 160px 0 35px;
+    padding: 60px 0 35px;
 }
 
 /**************************************ARTICLE NEXT**************************************/
