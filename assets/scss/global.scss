@@ -126,7 +126,12 @@ code,
 kbd,
 pre,
 samp {
+  font-size: 0.85em;
   font-family: monospace;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: rgba(128, 128, 128, 0.1);
+  padding: 1px 2px;
 }
 
 fieldset,
