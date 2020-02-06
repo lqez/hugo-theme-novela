@@ -11,7 +11,7 @@
                             </div>
                         {{ end }}
                         {{ with .Params.bio }}
-                            <p class="bio-text">{{ . }}</p>
+                            <p class="bio-text">{{ replace . "\n" "<br/>" | safeHTML }}</p>
                         {{ end }}
                     </a>
                 {{ end }}

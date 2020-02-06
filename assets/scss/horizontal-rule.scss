@@ -1,7 +1,7 @@
 hr{
     position: relative;
     width: 100%;
-    max-width: 680px;
+    max-width: var(--content-width);
     margin: 50px auto;
     border: 0;
     height: 14.36px;

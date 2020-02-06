@@ -6,7 +6,7 @@
             </div>
         {{ end }}
         <h1 class="author-heading">{{ .Title }}</h1>
-        <p class="author-subheading">{{ .Params.bio }}</p>
+        <p class="author-subheading">{{ replace .Params.bio "\n" "<br/>" | safeHTML }}</p>
         <div class="author-social">
             {{ partial "author/social_links.html" . }}
         </div>
