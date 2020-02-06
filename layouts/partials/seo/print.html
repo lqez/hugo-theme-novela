@@ -93,11 +93,17 @@
 
 {{- $img := "/images/default.jpg" -}}
 {{- with .Site.Params.seo.default_image -}}
-	{{- $img = . -}}
+  {{- $img = . -}}
 {{- end -}}
 
 {{- with .Params.seo.image -}}
 	{{- $img = . -}}
+{{ else }}
+  {{/* If no SEO IMAGE is set, we look for the .Params.images slice
+          and use the first one if it has an `image` key */}}
+  {{- with .Params.hero -}}
+    {{- $img = . -}}
+  {{- end -}}
 {{- end -}}
 
 
@@ -106,7 +112,7 @@
 {{/* Twitter
 	---------------------------- */}}
 {{/* Default twitter_card is "summary_large_image" */}}
-{{- $.Scratch.SetInMap "seo" "twitter_card" ($img | absURL) -}}
+{{- $.Scratch.SetInMap "seo" "twitter_card" "summary_large_image" -}}
 
 {{/* We check the site config sports a Social.twitter and use as handle */}}
 {{- with .Site.Social.twitter -}}
