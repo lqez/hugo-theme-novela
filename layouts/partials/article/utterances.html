@@ -1,0 +1,10 @@
+{{ with .Site.Params.utterances }}
+<h2 id="comment">Comment</h2>
+<script src="https://utteranc.es/client.js"
+        repo="{{ .repo }}"
+        issue-term="pathname"
+        theme="{{ .theme }}"
+        crossorigin="anonymous"
+        async>
+</script>
+{{ end }}
