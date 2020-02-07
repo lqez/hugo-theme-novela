@@ -40,7 +40,7 @@ body{
     --dark-primary: #fff;
     --dark-secondary: #fff;
     --dark-accent: #e0b943;
-    --dark-background: #111216;
+    --dark-background-color: #111216;
     --dark-hover: rgba(255, 255, 255, 0.07);
     --dark-gradient: linear-gradient(180deg, #111216 0%, rgba(66, 81, 98, 0.36) 100%);
     --dark-articleText: #fff;
@@ -52,6 +52,7 @@ body{
     --dark-errorBackground: rgba(238, 86, 91, 0.1);
     --dark-horizontalRule: rgba(255, 255, 255, 0.15);
     --dark-inputBackground: rgba(255, 255, 255, 0.07);
+    --dark-tooltip: #000;
 
     /*PRISM*/
     --token: #fff;
