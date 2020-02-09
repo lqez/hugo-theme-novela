@@ -216,20 +216,3 @@ img.Image__Zoom ~ div {
     fill: var(--primary);
   }
 }
-
-img{
-  -webkit-animation-name: image-load-in;
-          animation-name: image-load-in;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
-}
-
-@-webkit-keyframes image-load-in {
-  0% {-webkit-filter: blur(8px);filter: blur(8px); opacity: 0;}
-  100% {-webkit-filter: blur(0);filter: blur(0); opacity: 1;}
-}
-
-@keyframes image-load-in {
-  0% {-webkit-filter: blur(8px);filter: blur(8px); opacity: 0;}
-  100% {-webkit-filter: blur(0);filter: blur(0); opacity: 1;}
-}
