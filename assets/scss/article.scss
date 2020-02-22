@@ -427,6 +427,11 @@
 
 .post-content{
     padding: 60px 0 35px;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
 }
 
 /**************************************ARTICLE NEXT**************************************/
