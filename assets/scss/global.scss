@@ -74,6 +74,7 @@ body {
   margin: 0;
   font-weight: 400;
   height: 100%;
+  overflow-wrap: break-word;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -122,9 +123,8 @@ textarea {
   font-weight: inherit;
 }
 
-p code {
+li code, p code, span code, a code {
   font-size: 0.85em;
-  font-family: monospace;
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color: rgba(128, 128, 128, 0.1);
