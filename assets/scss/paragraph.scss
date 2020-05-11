@@ -17,22 +17,15 @@ p b {
 
 /*DESKTOP*/
 @media screen and (max-width: 1070px){
-    p{
+    p {
         max-width: 507px;
     }
 }
 
 /*TABLET*/
 @media screen and (max-width: 735px){
-    p{
+    p {
         max-width: 486px;
         margin: 0 auto 25px;
-    }
-}
-
-/*PHABLET*/
-@media screen and (max-width: 540px){
-    p{
-        padding: 0 20px;
     }
 }
