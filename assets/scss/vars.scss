@@ -36,16 +36,16 @@ body{
     --tooltip: lightgrey;
 
     /*DARK COLORS*/
+    --dark-primary: #eee;
+    --dark-secondary: #ccc;
     --dark-grey: #73737D;
-    --dark-primary: #fff;
-    --dark-secondary: #fff;
-    --dark-accent: #e0b943;
     --dark-background-color: #111216;
+    --dark-accent: #e0b943;
     --dark-hover: rgba(255, 255, 255, 0.07);
     --dark-gradient: linear-gradient(180deg, #111216 0%, rgba(66, 81, 98, 0.36) 100%);
-    --dark-articleText: #fff;
+    --dark-articleText: #c0c0ca;
     --dark-track: rgba(255, 255, 255, 0.3);
-    --dark-progress: #fff;
+    --dark-progress: #ddd;
     --dark-card: #1D2128;
     --dark-error: #EE565B;
     --dark-success: #46B17B;
