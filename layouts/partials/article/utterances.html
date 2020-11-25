@@ -1,10 +1,34 @@
 {{ with .Site.Params.utterances }}
 <h2 id="comment">Comment</h2>
-<script src="https://utteranc.es/client.js"
-        repo="{{ .repo }}"
-        issue-term="pathname"
-        theme="{{ .theme }}"
-        crossorigin="anonymous"
-        async>
+<script>
+const lightTheme = "{{ .theme.light }}";
+const darkTheme = "{{ .theme.dark }}";
+let theme = getTheme();
+
+function getTheme() {
+    return (localStorage.getItem("isLight") === 'false') ? darkTheme : lightTheme;
+}
+
+function refreshUtterancesTheme() {
+    theme = getTheme();
+
+    let utterances = document.querySelector('iframe.utterances-frame');
+    utterances.contentWindow.postMessage({
+        type: 'set-theme',
+        theme: theme,
+    }, 'https://utteranc.es');
+}
+</script>
+<script>
+(function(d){
+    var ref = d.querySelector('h2#comment');
+    var js = d.createElement('script');
+    js.src = "https://utteranc.es/client.js";
+		js.setAttribute("crossorigin", "anonymous");
+		js.setAttribute("issue-term", "pathname");
+		js.setAttribute("repo", "{{ .repo }}");
+		js.setAttribute("theme", theme);
+    ref.parentNode.appendChild(js);
+}(document));
 </script>
 {{ end }}

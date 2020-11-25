@@ -80,6 +80,10 @@ function toggleColors(){
 
         localStorage.setItem("isLight", 'true');
     }
+
+    if (typeof refreshUtterancesTheme == 'function') {
+        refreshUtterancesTheme();
+    }
 }
 
 function makeDark(){

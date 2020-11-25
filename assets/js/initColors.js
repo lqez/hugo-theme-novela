@@ -1,4 +1,3 @@
-
 let be = document.getElementsByTagName("BODY")[0];
 let styleVariables = [
     'primary',
