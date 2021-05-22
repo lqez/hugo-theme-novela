@@ -403,6 +403,17 @@
       display: block;
       margin: 5px auto;
     }
+
+    figure {
+      margin: 10px auto 20px;
+    }
+
+    figcaption h4 {
+      text-align: center;
+      font-family: var(--sans-serif);
+      font-size: 1.4rem;
+      color: var(--grey);
+    }
 }
 
 /**************************************ARTICLE NEXT**************************************/

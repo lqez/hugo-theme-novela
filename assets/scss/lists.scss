@@ -1,4 +1,4 @@
-ul{
+ul, ol {
     counter-reset: list;
     color: var(--articleText);
     position: relative;
@@ -76,7 +76,8 @@ ul li > *{
 
 ol li{
     position: relative;
-    padding-bottom: 15px;
+    list-style-type: none;
+    padding-bottom: 5px;
 }
 
 /*TABLET*/
@@ -110,9 +111,9 @@ ol li::before {
     content: counter(list) ".";
     font-weight: 600;
     position: absolute;
-    left: -3rem;
-    top: -0.3rem;
-    font-size: 2rem;
+    left: -2rem;
+    top: -0.1rem;
+    font-size: 1.8rem;
 }
 
 @media screen and (max-width: 735px){
