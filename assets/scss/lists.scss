@@ -78,15 +78,13 @@ ol li{
     position: relative;
     list-style-type: none;
     padding-bottom: 5px;
+    margin-left: 0;
 }
 
 /*TABLET*/
 @media screen and (max-width: 735px){
     ol li{
-        padding-left: 30px;
         padding: 0;
-    }
-    ol li p{
         padding-left: 30px;
     }
 }
