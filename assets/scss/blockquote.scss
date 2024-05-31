@@ -2,7 +2,7 @@ blockquote{
     -webkit-transition: var(--color-mode-transition);
     -o-transition: var(--color-mode-transition);
     transition: var(--color-mode-transition);
-    margin: 15px auto 50px;
+    margin: 15px auto;
     color: var(--articleText);
     font-family: var(--serif);
     font-style: italic;
@@ -15,9 +15,6 @@ blockquote > p {
   padding-bottom: 0;
   width: 100%;
   margin: 0 auto;
-  font-size: 36px;
-  line-height: 1.32;
-  font-weight: bold;
 }
 
 @media screen and (max-width: 735px) {
