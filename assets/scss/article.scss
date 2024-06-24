@@ -25,6 +25,10 @@
     }
 }
 
+#articleHero {
+  padding: 0;
+}
+
 .article-hero-heading{
     font-size: 48px;
     font-family: var(--serif);
@@ -60,25 +64,7 @@
     }
 
     @media screen and(max-width: $phablet){
-        font-size: 14px;
-
-        &.has-coauthors::before{
-            content: '';
-            position: absolute;
-            left: -20px;
-            right: -20px;
-            top: -10px;
-            bottom: -10px;
-            border: 1px solid var(--horizontalRule);
-            opacity: 0.5;
-            border-radius: 5px;
-        }
-
-        strong {
-            display: block;
-            font-weight: 500;
-            margin-bottom: 5px;
-        }
+        display: none;
     }
 }
 
@@ -411,7 +397,8 @@
     figcaption h4 {
       text-align: center;
       font-family: var(--sans-serif);
-      font-size: 1.4rem;
+      font-weight: normal;
+      font-size: 1.6rem;
       color: var(--grey);
     }
 

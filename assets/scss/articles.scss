@@ -21,11 +21,6 @@
     @media screen and (max-width: $tablet){
       margin-bottom: 60px;
     }
-
-    /*PHABLET*/
-    @media screen and (max-width: $phablet){
-      display: none;
-    }
 }
 
 .grid-controls-container{
@@ -43,16 +38,11 @@
 }
 
 .heading-container{
-    margin: 100px 0;
+    margin: 50px 0;
 
-    /*DESKTOP*/
-    @media screen and (max-width: $desktop){
-      width: 80%;
-    }
-
-    /*TABLET*/
-    @media screen and (max-width: $tablet){
-      width: 100%;
+    /*PHABLET*/
+    @media screen and (max-width: $phablet){
+      margin: 20px 0;
     }
 }
 
@@ -74,7 +64,7 @@
     /*PHABLET*/
     @media screen and (max-width: $phablet){
       font-size: 32px;
-      width: 80%;
+      width: 90%;
     }
 }
 
@@ -348,7 +338,7 @@
 
     /*TABLET*/
     @media screen and (max-width: $tablet){
-      height: 200px;
+      height: 180px;
       margin-bottom: 35px;
     }
 
@@ -393,7 +383,7 @@
     /*PHABLET*/
     @media screen and (max-width: $phablet){
       font-size: 22px;
-      padding: 30px 20px 0;
+      padding: 0px 20px;
       margin-bottom: 10px;
       -webkit-line-clamp: 3;
     }
@@ -416,7 +406,6 @@
     @media screen and (max-width: $phablet){
       margin-bottom: 15px;
       max-width: 100%;
-      padding:  0 20px;
       margin-bottom: 20px;
       -webkit-line-clamp: 3;
     }
@@ -564,7 +553,7 @@
       }
 
       p{
-        padding: 30px 20px 0;
+        padding: 0 20px;
       }
     }
 }
